@@ -2,7 +2,7 @@
   "name": "dewdew-clock",
   "displayName": "DewDew Clock",
   "description": "Simple clock and coding time tracker for your sidebar",
-  "version": "1.102.1",
+  "version": "0.2511.1",
   "publisher": "dewdew",
   "engines": {
     "vscode": "^1.106.0"
