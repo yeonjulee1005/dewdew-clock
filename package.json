@@ -1,0 +1,64 @@
+{
+  "name": "dewdew-clock",
+  "displayName": "DewDew Clock",
+  "description": "Simple clock and coding time tracker for your sidebar",
+  "version": "1.1.1",
+  "publisher": "dewdew",
+  "engines": {
+    "vscode": "^1.106.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "dewdew-clock.clockView",
+          "name": "DewDew Clock"
+        }
+      ]
+    }
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#DA5958",
+    "theme": "dark"
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "pnpm run check-types && pnpm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "pnpm run check-types && pnpm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test",
+    "version:major": "node scripts/version-runner.cjs major",
+    "version:minor": "node scripts/version-runner.cjs minor",
+    "version:patch": "node scripts/version-runner.cjs patch",
+    "version:clear": "node scripts/version-runner.cjs clear"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.106.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "@vscode/vsce": "^3.7.0",
+    "esbuild": "^0.27.0",
+    "eslint": "^9.39.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
+  }
+}
