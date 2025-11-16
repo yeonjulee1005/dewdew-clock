@@ -82,7 +82,6 @@ export class ClockViewProvider implements vscode.WebviewViewProvider {
           color: var(--vscode-foreground);
           background-color: var(--vscode-sideBar-background);
           font-family: var(--vscode-font-family);
-          overflow: hidden;
         }
         
         html {
