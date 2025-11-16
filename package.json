@@ -3,17 +3,45 @@
   "displayName": "DewDew Clock",
   "description": "Simple clock and coding time tracker for your sidebar",
   "version": "1.2511.1",
-  "publisher": "dewdew",
+  "publisher": "DewdewClock",
+  "homepage": "https://www.dewdew.world",
   "engines": {
     "vscode": "^1.106.0"
   },
+  "bugs": {
+    "url": "https://github.com/yeonjulee1005/dewdew-clock/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeonjulee1005/dewdew-clock"
+  },
   "categories": [
-    "Other"
+    "Visualization",
+    "Productivity"
   ],
-  "activationEvents": [
-    "*"
+  "icon": "assets/images/icon.png",
+  "galleryBanner": {
+    "color": "#B19CD9",
+    "theme": "dark"
+  },
+  "keywords": [
+    "clock",
+    "time",
+    "timer",
+    "coding-time",
+    "productivity",
+    "tracker",
+    "sidebar",
+    "korean",
+    "한국어",
+    "시계",
+    "시간",
+    "코딩시간"
   ],
   "main": "./dist/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "contributes": {
     "views": {
       "explorer": [
@@ -25,13 +53,9 @@
       ]
     }
   },
-  "icon": "images/icon.png",
-  "galleryBanner": {
-    "color": "#DA5958",
-    "theme": "dark"
-  },
   "scripts": {
     "vscode:prepublish": "pnpm run package",
+    "vsix": "vsce package",
     "compile": "pnpm run check-types && pnpm run lint && node esbuild.js",
     "watch": "npm-run-all -p watch:*",
     "watch:esbuild": "node esbuild.js --watch",
