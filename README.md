@@ -1,7 +1,7 @@
 # DewDew Clock
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/yeonjulee1005/dewdew-clock/main/assets/images/icon.png" width='180px' height='180px' alt="DewDew Clock Icon" >
+    <img src="https://github.com/yeonjulee1005/dewdew-clock/blob/c2b89aeed42a7000190115a238ed64de457b9379/assets/images/icon.png" width='180px' height='180px' alt="DewDew Clock Icon" >
 </p>
 
 <p align="center">
