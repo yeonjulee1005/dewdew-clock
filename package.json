@@ -6,7 +6,7 @@
   "publisher": "DewdewClock",
   "homepage": "https://www.dewdew.world",
   "engines": {
-    "vscode": "^1.106.0"
+    "vscode": "^1.80.0"
   },
   "bugs": {
     "url": "https://github.com/yeonjulee1005/dewdew-clock/issues"
