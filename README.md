@@ -12,7 +12,7 @@
 
 A simple and elegant clock extension for Visual Studio Code that displays real-time clock and coding time tracking in your sidebar.
 
-![Demo](assets/demo.gif)
+![Demo](https://raw.githubusercontent.com/yeonjulee1005/dewdew-clock/main/assets/demo.gif)
 
 ## Features
 
