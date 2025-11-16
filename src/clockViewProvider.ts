@@ -76,7 +76,7 @@ export class ClockViewProvider implements vscode.WebviewViewProvider {
 
         body {
           margin: 0;
-          padding: 16px 40px;
+          padding: 16px 20px;
           min-height: 150px;
           height: auto;
           color: var(--vscode-foreground);
@@ -86,7 +86,6 @@ export class ClockViewProvider implements vscode.WebviewViewProvider {
         
         html {
           height: auto;
-          overflow: hidden;
         }
 
         .clock-container {
@@ -222,7 +221,7 @@ export class ClockViewProvider implements vscode.WebviewViewProvider {
               try {
                 // body의 실제 너비 사용 (CSS padding 40px 고려)
                 const bodyRect = document.body.getBoundingClientRect();
-                const bodyPadding = 80; // 좌우 40px씩 (총 80px)
+                const bodyPadding = 40; // 좌우 20px씩 (총 40px)
                 const availableWidth = bodyRect.width - bodyPadding;
                 
                 if (availableWidth <= 0) {
