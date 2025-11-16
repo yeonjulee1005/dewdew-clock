@@ -1,18 +1,20 @@
 # DewDew Clock
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yeonjulee1005/dewdew-clock/main/assets/images/icon.png" width='180px' height='180px' alt="DewDew Clock Icon" >
+  <img src="https://raw.githubusercontent.com/yeonjulee1005/dewdew-clock/main/assets/images/icon.png" width="180" height="180" alt="DewDew Clock Icon" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/visual-studio-marketplace/v/DewdewClock.dewdew-clock" />
+  <img src="https://img.shields.io/visual-studio-marketplace/v/DewdewClock.dewdew-clock" alt="VS Code Marketplace Version" />
   <h4 align="center">Simple clock and coding time tracker for your sidebar</h4>
   <br />
 </p>
 
 A simple and elegant clock extension for Visual Studio Code that displays real-time clock and coding time tracking in your sidebar.
 
-![Demo](https://raw.githubusercontent.com/yeonjulee1005/dewdew-clock/main/assets/demo.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/yeonjulee1005/dewdew-clock/main/assets/images/demo.gif" alt="DewDew Clock Demo" />
+</p>
 
 ## Features
 
